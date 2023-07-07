@@ -74,7 +74,7 @@ public class testServlet extends HttpServlet {
             out.println("</form>");
             out.println("</div>");
             out.println("</section>");
-//テスト
+
             out.println("</main>");
             out.println("<footer id=\"footer\">");
             out.println("<p>&copy; 2023 Profile</p>");
