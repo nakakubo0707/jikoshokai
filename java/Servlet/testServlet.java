@@ -55,6 +55,26 @@ public class testServlet extends HttpServlet {
             out.println("</div>");
             out.println("</div>");
             out.println("</section>");
+
+            // フォームを追加
+            out.println("<section id=\"contact\" class=\"wrapper\">");
+            out.println("<h2 class=\"section-title\">お問い合わせ</h2>");
+            out.println("<div class=\"content\">");
+            out.println("<form action=\"processForm\" method=\"POST\">");
+            out.println("<label for=\"name\">名前</label><br>");
+            out.println("<input type=\"text\" id=\"name\" name=\"name\" required><br>");
+
+            out.println("<label for=\"email\">メールアドレス</label><br>");
+            out.println("<input type=\"email\" id=\"email\" name=\"email\" required><br>");
+
+            out.println("<label for=\"message\">メッセージ</label><br>");
+            out.println("<textarea id=\"message\" name=\"message\" rows=\"5\" required></textarea><br>");
+
+            out.println("<input type=\"submit\" value=\"送信\">");
+            out.println("</form>");
+            out.println("</div>");
+            out.println("</section>");
+//テスト
             out.println("</main>");
             out.println("<footer id=\"footer\">");
             out.println("<p>&copy; 2023 Profile</p>");
@@ -66,3 +86,4 @@ public class testServlet extends HttpServlet {
         }
     }
 }
+
