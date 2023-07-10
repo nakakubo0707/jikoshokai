@@ -43,7 +43,7 @@ public class testServlet extends HttpServlet {
             out.println("<section id=\"about\" class=\"wrapper\">");
             out.println("<h2 class=\"section-title\">基本情報</h2>");
             out.println("<div class=\"content\">");
-            out.println("<img src=\"C:\\Users\\DEFTRIBE\\Desktop\\nakakubo\\apple.jpg\" alt=\"リンゴ\" style=\"width: 200px; height: 150px;\">");
+            out.println("<img src=\"images/apple.jpg\" alt=\"リンゴ\" style=\"width: 200px; height: 150px;\">");
             out.println("<div class=\"text\">");
             out.println("<h3 class=\"content-title\">" + name + "</h3>");
             out.println("<p>生年月日 " + birthday + "</p>");
@@ -56,6 +56,9 @@ public class testServlet extends HttpServlet {
             out.println("</div>");
             out.println("</section>");
 
+            
+            
+            
             // フォームを追加
             out.println("<section id=\"contact\" class=\"wrapper\">");
             out.println("<h2 class=\"section-title\">お問い合わせ</h2>");
@@ -74,7 +77,6 @@ public class testServlet extends HttpServlet {
             out.println("</form>");
             out.println("</div>");
             out.println("</section>");
-
             out.println("</main>");
             out.println("<footer id=\"footer\">");
             out.println("<p>&copy; 2023 Profile</p>");
